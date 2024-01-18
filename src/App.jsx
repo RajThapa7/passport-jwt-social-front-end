@@ -6,6 +6,7 @@ import "./App.css";
 const Home = React.lazy(() => import("./pages/home"));
 const Login = React.lazy(() => import("./pages/login"));
 const Profile = React.lazy(() => import("./pages/profile"));
+const Register = React.lazy(() => import("./pages/register"));
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         />
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </React.Suspense>
   );

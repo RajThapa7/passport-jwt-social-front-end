@@ -33,7 +33,7 @@ export const AuthProvider = ({ children }) => {
         .catch((err) => {
           localStorage.removeItem("user");
           localStorage.removeItem("token");
-          navigate("/login");
+          // navigate("/login");
           console.log(err);
         });
     })();
